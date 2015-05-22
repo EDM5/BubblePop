@@ -1,2 +1,2 @@
 # BubblePop
-EDM8
+Indie developer EDM5's second game.
