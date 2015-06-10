@@ -12,10 +12,16 @@
           if(!window.jquery){
             Modernizer.load("_js/jquery-1.8.2.min.js")
           }
-        },
+        }
       },
       {
         load: "_js/game.js"
+        complete: function(){
+          $(function(){
+            var game = new BubbleShoot.Game();
+            game.init();
+          })
+        }
       }]);
     </script>
   </head>
