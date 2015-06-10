@@ -5,6 +5,16 @@
     <title>BubblePop</title>
     <link href="_css/main.css" rel="stylesheet">
     <script src=¨_js/modernizr.js¨></script>
+    <script>
+      Modernizr.load({
+        load: "//ajax.googlepis.com/ajax/libs/jquery/1.8.2/jquery.js",
+        complete: function () {
+          if(!window.jquery){
+            Modernizer.load("_js/jquery-1.8.2.min.js")
+          }
+        }
+      });
+    </script>
   </head>
   <body>
     <div id="page">
